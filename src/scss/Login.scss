@@ -19,31 +19,6 @@
       text-align: center;
     }
 
-    &--resetLink {
-      font-size: 19px;
-      text-decoration: underline;
-      margin-bottom: 10px;
-      cursor: pointer;
-      color: black;
-    }
-
-    &--registerLink {
-      font-size: 19px;
-      margin-bottom: 10px;
-
-      span {
-        text-decoration: underline;
-        cursor: pointer;
-        color: black;
-      }
-    }
-
-    &--linkVolver{
-      font-size: 19px;
-      margin-bottom: 10px;
-      color: black;
-    }
-
     &--inputs {
       display: flex;
       flex-direction: column;
@@ -83,6 +58,31 @@
           }
         }
       }
+    }
+
+    &--resetLink {
+      font-size: 19px;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      cursor: pointer;
+      color: black;
+    }
+
+    &--registerLink {
+      font-size: 19px;
+      margin-bottom: 10px;
+
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+        color: black;
+      }
+    }
+
+    &--linkVolver{
+      font-size: 19px;
+      margin-bottom: 10px;
+      color: black;
     }
 
     &--btnLogin {

@@ -1,13 +1,14 @@
+@import "../scss/AuthLayout.scss";
 @import "../scss/Login.scss";
 @import "../scss/Register.scss";
 @import "../scss/ResetPassword.scss";
-@import "../scss/ChatContainer.scss";
+@import "../scss/MemoContainer.scss";
+@import "../scss/Nav.scss";
 @import "../scss/MemoTest.scss";
 @import "../scss/Estadisticas.scss";
-@import "../scss/Contacto.scss";
 @import "../scss/MiCuenta.scss";
 
-.titleNoLogin{
-    text-align: center;
-    margin-top: 100px;
+.titleNoLogin {
+  text-align: center;
+  margin-top: 100px;
 }

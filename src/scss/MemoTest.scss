@@ -3,6 +3,8 @@
   height: 72vh;
   margin: auto;
   margin-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .board {
@@ -90,37 +92,39 @@
     color: black;
   }
 
-  &__title{
+  &__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
     font-size: 20px;
 
-    svg{
+    svg {
       height: 50px;
       width: 50px;
       margin-left: 10px;
     }
   }
 
-  &__text{
+  &__text {
     font-weight: 600;
   }
 }
 
-.modalBtnReset{
+.modalBtnReset {
   padding: 10px 15px;
   border-radius: 20px;
   border: none;
   background-color: $Color-Azul;
+  border: 3px solid $Color-Azul;
   color: white;
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
 
-  &:hover{
-    opacity: .8;
-    transition: ease-in-out .2s;
+  &:hover {
+    transition: ease-in-out 0.3s;
+    background-color: $Color-Amarillo;
+    color: $Color-Azul;
   }
 }

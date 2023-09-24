@@ -1,0 +1,21 @@
+.authLayout {
+  background-color: $Color-Amarillo;
+  height: 100vh;
+  border-radius: 0 0 150px 150px;
+  overflow: hidden;
+
+  &__title {
+    font-size: 87px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  &__form {
+    max-width: 530px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

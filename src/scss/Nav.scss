@@ -1,34 +1,40 @@
-.nav {
+.navApp {
+  padding-left: 10px;
+  padding-right: 10px;
+
   ul {
     background-color: $Color-Azul;
-    max-width: 1250px;
-    margin: 0 auto;
+    max-width: 792px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 0 35px;
+    margin: 0 auto;
     margin-top: 30px;
     border-radius: 50px;
     box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
 
-    @media (max-width: 1300px) {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     li {
-      cursor: pointer;
-      text-decoration: none;
       list-style: none;
-      color: rgba(255, 255, 255, 0.754);
-      font-size: 23px;
-      font-weight: 600;
-
-      &:hover{
-        color: white;
-      }
     }
   }
+}
+
+.linkNav {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.754);
+  font-size: 23px;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.memoTestNavIcon {
+  width: 50px;
+  height: 50px;
 }
