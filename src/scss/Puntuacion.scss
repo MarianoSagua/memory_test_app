@@ -1,0 +1,125 @@
+.puntuacionCards {
+  border: 1px solid red;
+  margin: 5%;
+  max-width: 792px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 900px) {
+    margin: 0 auto;
+    margin-top: 3%;
+    flex-direction: row;
+  }
+
+  &__one {
+    width: 95%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: $Color-Azul;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--puntos {
+      color: white;
+      font-weight: 600;
+      font-size: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -50px;
+
+      span {
+        font-size: 20px;
+        margin-top: -55px;
+      }
+    }
+
+    @media (min-width: 500px) {
+      width: 375px;
+    }
+
+    @media (min-width: 900px) {
+      width: 50%;
+    }
+  }
+
+  &__two {
+    width: 95%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: $Color-Azul;
+
+    &--promedio {
+      color: white;
+      font-weight: 600;
+      font-size: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+
+      span {
+        font-size: 20px;
+        margin-top: -40px;
+      }
+    }
+
+    @media (min-width: 500px) {
+      width: 375px;
+    }
+
+    @media (min-width: 900px) {
+      width: 50%;
+    }
+  }
+}
+
+.puntuacionUltimasPartidas {
+  border: 1px solid green;
+  margin: 5%;
+  max-width: 792px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+
+  @media (min-width: 900px) {
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+
+  h3 {
+    font-weight: 600;
+  }
+}
+
+.list-group {
+  width: 100%;
+  cursor: default;
+
+  li {
+    span {
+      @media (min-width: 676px) {
+        width: 177px;
+      }
+    }
+  }
+}
+.list-group-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $Color-Azul;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 20px;
+}

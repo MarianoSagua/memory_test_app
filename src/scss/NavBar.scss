@@ -1,0 +1,56 @@
+#navbar {
+  background: transparent;
+}
+
+.navbarNav {
+  max-width: 752px;
+  background-color: $Color-Azul;
+  padding: 20px 40px;
+  border-radius: 50px;
+  margin-top: 2%;
+
+  @media (max-width: 840px) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.linkNav {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.bi-list {
+  color: white;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  li {
+    margin-top: 20px;
+    cursor: pointer;
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navItemLogin {
+  @media (min-width: 992px) {
+    width: 100%;
+    text-align: end;
+  }
+}

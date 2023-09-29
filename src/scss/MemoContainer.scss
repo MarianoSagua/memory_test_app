@@ -1,0 +1,9 @@
+.memoContainer {
+  background-color: $Color-Amarillo;
+  border-radius: 0 0 150px 150px;
+  overflow: hidden;
+
+  @media (min-width: 800px) {
+    height: 100vh;
+  }
+}

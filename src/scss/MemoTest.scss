@@ -1,0 +1,161 @@
+.memoTest {
+  max-width: 792px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: 800px) {
+    height: 72vh;
+    margin-top: 50px;
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 100%;
+  place-items: center;
+
+  @media (min-width: 650px) and (max-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.spin {
+  border: 1px solid blue;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  width: 160px;
+  height: 146px;
+  cursor: pointer;
+
+  @media (min-width: 650px) {
+    width: 180px;
+  }
+
+  @media (min-width: 800px) {
+    height: 166px;
+  }
+}
+
+.memo-block-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 160px;
+  height: 146px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid $Color-Azul;
+  border-radius: 1rem;
+
+  @media (min-width: 650px) {
+    width: 180px;
+  }
+
+  @media (min-width: 800px) {
+    height: 166px;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+
+  img {
+    height: 100%;
+    border-radius: 12px;
+    width: 100%;
+  }
+}
+
+.flip-card-front {
+  background-color: $Color-Azul;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.custom-modal {
+  .ant-modal-content {
+    background-color: $Color-Amarillo;
+    color: black;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    svg {
+      height: 50px;
+      width: 50px;
+      margin-left: 10px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+  }
+}
+
+.modalBtnReset {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: $Color-Azul;
+  border: 3px solid $Color-Azul;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+  &:hover {
+    transition: ease-in-out 0.3s;
+    background-color: $Color-Amarillo;
+    color: $Color-Azul;
+  }
+}
