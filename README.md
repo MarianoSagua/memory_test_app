@@ -1,4 +1,4 @@
-# MEMORY TEST APP
+# Memory Test Web App
 
 DESCRIPCION DE LA APP:
 
